@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}    
+body{
+    background-color: #7BA5C6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.redes-sociais ul{
+    list-style-type: none;
+}
+.redes-sociais a img {
+    width: 50px;
+}
+
+
+#calculator{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: black;
+    background-color: #CDE6E7;
+}
+
+#operacoes{
+    text-align: right;
+    min-height: 1.6em;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#operacoes-anteriores{
+    color: #777;
+}
+
+#operacao-atual{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}   
+
+#buttons button{
+    border: 1px solid transparent;
+    border: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+#buttons .numero{
+    background-color: white;
+}
+
+#buttons button:hover{
+    background-color: #bababa;
+    border-color: #999;
+}
+
+#buttons #button-igual{
+    grid-row: span 2;
+    height: 8.2em;
+    background-color: #75a5cb;
+}
+#buttons #numero-0{
+    grid-column: span 2;
+}   
